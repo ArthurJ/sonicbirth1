@@ -1,0 +1,15 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changedClamp = id; }; 
+            CLASS = SBCleaner; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mClampButton = NSButton; mSettingsView = NSView; }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }
+    ); 
+    IBVersion = 1; 
+}

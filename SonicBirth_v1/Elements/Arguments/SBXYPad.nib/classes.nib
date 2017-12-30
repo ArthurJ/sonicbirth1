@@ -1,0 +1,64 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeCustomColor = id; }; 
+            CLASS = SBArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mColorWellBack = NSColorWell; 
+                mColorWellContour = NSColorWell; 
+                mColorWellFront = NSColorWell; 
+                mUseCustomColorBt = NSButton; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }, 
+        {
+            ACTIONS = {changedAverage = id; pushedRealtimeButton = id; }; 
+            CLASS = SBSimpleArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mAverageSlider = NSSlider; 
+                mAverageTF = NSTextField; 
+                mNameTF = NSTextField; 
+                mRealtimeButton = NSButton; 
+            }; 
+            SUPERCLASS = SBArgument; 
+        }, 
+        {
+            ACTIONS = {
+                changedImages = id; 
+                "changedTypeOrMapping_x" = id; 
+                "changedTypeOrMapping_y" = id; 
+                "sliderMoved_x" = id; 
+                "sliderMoved_y" = id; 
+            }; 
+            CLASS = SBXYPad; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mBackImageView = NSImageView; 
+                "mDefaultTF_x" = NSTextField; 
+                "mDefaultTF_y" = NSTextField; 
+                mFrontImageView = NSImageView; 
+                mHeightTF = NSTextField; 
+                "mMappingPopUp_x" = NSPopUpButton; 
+                "mMappingPopUp_y" = NSPopUpButton; 
+                mRadiusTF = NSTextField; 
+                "mRangeMaxTF_x" = NSTextField; 
+                "mRangeMaxTF_y" = NSTextField; 
+                "mRangeMinTF_x" = NSTextField; 
+                "mRangeMinTF_y" = NSTextField; 
+                mSettingsView = NSView; 
+                "mSlider_x" = NSSlider; 
+                "mSlider_y" = NSSlider; 
+                "mTypePopUp_x" = NSPopUpButton; 
+                "mTypePopUp_y" = NSPopUpButton; 
+                mWidthTF = NSTextField; 
+            }; 
+            SUPERCLASS = SBSimpleArgument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

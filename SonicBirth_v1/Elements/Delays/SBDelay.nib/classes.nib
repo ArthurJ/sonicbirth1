@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = SBDelayDynamic; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mSettingsView = NSView; mTF = NSTextField; }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

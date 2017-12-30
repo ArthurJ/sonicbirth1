@@ -1,0 +1,38 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeCustomColor = id; }; 
+            CLASS = SBArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mColorWellBack = NSColorWell; 
+                mColorWellContour = NSColorWell; 
+                mColorWellFront = NSColorWell; 
+                mUseCustomColorBt = NSButton; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }, 
+        {
+            CLASS = SBKeyboardTap; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mCellRadiusTF = NSTextField; mSettingsView = NSView; }; 
+            SUPERCLASS = SBSimpleArgument; 
+        }, 
+        {
+            ACTIONS = {changedAverage = id; pushedRealtimeButton = id; }; 
+            CLASS = SBSimpleArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mAverageSlider = NSSlider; 
+                mAverageTF = NSTextField; 
+                mNameTF = NSTextField; 
+                mRealtimeButton = NSButton; 
+            }; 
+            SUPERCLASS = SBArgument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

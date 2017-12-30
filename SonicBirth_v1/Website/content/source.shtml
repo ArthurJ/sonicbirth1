@@ -1,0 +1,28 @@
+
+<!--#set var="SB_TITLE" value="Source" -->
+<!--#include virtual="ssi/header.shtml" -->
+
+<!--Right column-->
+
+<small>
+	<p>Contact the author if you'd like to become a member of this project.</p>
+</small>
+
+
+<!--#include virtual="ssi/mainColumn.ssi" -->
+<!--Main column-->
+
+<p>
+	<a href="http://sourceforge.net/projects/sonicbirth/">
+		<b>Sourceforge project page</b>
+	</a>	
+</p>
+
+<p><b>Subversion Access</b></p>
+<p>This project's SourceForge.net Subversion repository can be checked out through SVN with the following instruction set:</p>
+<p><pre>svn co https://sonicbirth.svn.sourceforge.net/svnroot/sonicbirth sonicbirth</pre></p>
+
+<p><b>Repository Web Access</b></p>
+<p>You can browse the code <a href="http://sonicbirth.svn.sourceforge.net/viewvc/sonicbirth/">here</a>.</p>
+
+<!--#include virtual="ssi/footer.ssi" -->

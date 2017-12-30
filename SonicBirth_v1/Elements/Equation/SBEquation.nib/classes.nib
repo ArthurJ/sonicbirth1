@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }, 
+        {
+            CLASS = SBEquation; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mEquationTF = NSTextField; 
+                mExecutePlan = NSTextView; 
+                mInputsTF = NSTextField; 
+                mSettingsView = NSView; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }
+    ); 
+    IBVersion = 1; 
+}

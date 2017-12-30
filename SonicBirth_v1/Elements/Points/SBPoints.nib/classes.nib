@@ -1,0 +1,32 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeCustomColor = id; }; 
+            CLASS = SBArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mColorWellBack = NSColorWell; 
+                mColorWellContour = NSColorWell; 
+                mColorWellFront = NSColorWell; 
+                mColorsView = NSView; 
+                mUseCustomColorBt = NSButton; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }, 
+        {
+            CLASS = SBPoints; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mHeightTF = NSTextField; 
+                mNameTF = NSTextField; 
+                mSettingsView = NSView; 
+                mWidthTF = NSTextField; 
+            }; 
+            SUPERCLASS = SBArgument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

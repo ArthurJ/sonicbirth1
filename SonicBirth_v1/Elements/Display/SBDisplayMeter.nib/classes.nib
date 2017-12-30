@@ -1,0 +1,37 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeCustomColor = id; }; 
+            CLASS = SBArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mColorWellBack = NSColorWell; 
+                mColorWellContour = NSColorWell; 
+                mColorWellFront = NSColorWell; 
+                mColorsView = NSView; 
+                mUseCustomColorBt = NSButton; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changedInversed = id; changedType = id; }; 
+            CLASS = SBDisplayMeter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mHeightTF = NSTextField; 
+                mInversedBt = NSButton; 
+                mMaxTF = NSTextField; 
+                mMinTF = NSTextField; 
+                mNameTF = NSTextField; 
+                mSettingsView = NSView; 
+                mTypePU = NSPopUpButton; 
+                mWidthTF = NSTextField; 
+            }; 
+            SUPERCLASS = SBArgument; 
+        }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }
+    ); 
+    IBVersion = 1; 
+}

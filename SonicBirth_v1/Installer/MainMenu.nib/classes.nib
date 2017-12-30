@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {changedConfig = id; startInstall = id; startUninstall = id; }; 
+            CLASS = Controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mFilesToDeleteTable = NSTableView; 
+                mFilesToInstallTable = NSTableView; 
+                mInstallDst = NSMatrix; 
+                mProgress = NSProgressIndicator; 
+                mStatus = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

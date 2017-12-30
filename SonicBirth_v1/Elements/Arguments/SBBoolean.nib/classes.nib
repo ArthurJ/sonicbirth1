@@ -1,0 +1,50 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeCustomColor = id; pushedRealtimeButton = id; }; 
+            CLASS = SBArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mColorWellBack = NSColorWell; 
+                mColorWellContour = NSColorWell; 
+                mColorWellFront = NSColorWell; 
+                mNameTF = NSTextField; 
+                mRealtimeButton = NSButton; 
+                mUseCustomColorBt = NSButton; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {
+            ACTIONS = {changedImages = id; pushedButton = id; }; 
+            CLASS = SBBoolean; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mButton = NSButton; 
+                mFalseValueEditTF = NSTextField; 
+                mFalseValueTF = NSTextField; 
+                mMidImageView = NSImageView; 
+                mOffImageView = NSImageView; 
+                mOnImageView = NSImageView; 
+                mSettingsView = NSView; 
+                mTrueValueEditTF = NSTextField; 
+                mTrueValueTF = NSTextField; 
+            }; 
+            SUPERCLASS = SBSimpleArgument; 
+        }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changedAverage = id; pushedRealtimeButton = id; }; 
+            CLASS = SBSimpleArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mAverageSlider = NSSlider; 
+                mAverageTF = NSTextField; 
+                mNameTF = NSTextField; 
+                mRealtimeButton = NSButton; 
+            }; 
+            SUPERCLASS = SBArgument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

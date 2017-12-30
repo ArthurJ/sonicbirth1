@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<!--Source:-->
+<!--http://webhost.bridgew.edu/etribou/layouts/skidoo/-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="css/nscreen.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/nprint.css" type="text/css" media="print" />
+		
+		<style type="text/css">
+			#masthead {	background-image: url(img/clouds.png); 
+						background-position: top right;
+						background-repeat: repeat-y; }
+			body	 {	background-image: url(img/clouds_part.jpg); 
+						background-position: top left;
+						background-repeat: repeat; }
+		<!--#if expr="$CHANGE_MIN_WIDTH" -->
+			#pageWrapper { min-width: <!--#echo var="CHANGE_MIN_WIDTH" -->px; }
+		<!--#endif -->
+		</style>
+		
+		<title>SonicBirth :: <!--#echo var="SB_TITLE" --></title>
+	</head>
+	<body>
+		<div id="oldBrowserNotice" class="hide">
+
+<!--oldBrowserNotice-->
+<p>
+	This site will look much better in a browser that supports 
+	<a href="http://www.webstandards.org/upgrade/" 
+	title="Download a browser that complies with Web standards.">web 
+	standards</a>, but it is accessible to any browser or Internet 
+	device.
+</p>
+
+		</div>
+		<div id="pageWrapper">
+			<hr class="hide" />
+			<div id="masthead" class="inside">
+<!--Header-->
+<br />
+<img src="img/sonicbirth_title.png" alt="SonicBirth"/><br />
+<small>Creating powerful audio plugins</small><br /><br />
+<h1>&gt; <!--#echo var="SB_TITLE" --></h1>
+
+			</div>
+			<hr class="hide" />
+			<div class="hnav">
+
+<!--Navigation bar-->
+<ul>
+	<li class="hide">
+		<a class="hide" href="#skipToContent"><em>Skip Navigation</em></a>
+		<span class="divider"> : </span>
+	</li>
+	<li>
+		<a href="index.shtml">About</a>
+		<span class="divider"> : </span>
+	</li>
+	<li>
+		<a href="modules.shtml">Modules</a>
+		<span class="divider"> : </span>
+	</li>
+	<li>
+		<a href="screenshots.shtml">Screenshots</a>
+		<span class="divider"> : </span>
+	</li>
+	<li>
+		<a href="download.shtml">Download</a>
+		<span class="divider"> : </span>
+	</li>
+	<li>
+		<a href="http://www.kvraudio.com/forum/viewforum.php?f=124">Forum</a>
+		<span class="divider"> : </span>
+	</li>
+	<li>
+		<a href="source.shtml">Source</a>
+		<span class="divider"> : </span>
+	</li>
+	<li>
+		<a href="support.shtml">Support</a>
+		<span class="divider"> : </span>
+	</li>
+</ul>
+
+			</div>
+			<div id="outerColumnContainer">
+				<div id="innerColumnContainer">
+					<hr class="hide" />
+					<div id="leftColumn">
+						<div class="inside">
+						
+						</div>
+					</div>
+					<hr class="hide" />
+					<div id="rightColumn">
+						<div class="inside">
+						

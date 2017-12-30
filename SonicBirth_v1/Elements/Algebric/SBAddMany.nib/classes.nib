@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = SBAddMany; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mSettingsView = NSView; mTF = NSTextField; }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }
+    ); 
+    IBVersion = 1; 
+}

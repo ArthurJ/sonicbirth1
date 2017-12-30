@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6165B09C-04DA-4B77-89A9-A5D9ED20B5B2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SonicBirth</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>484ce1e7-802b-0410-904d-8655360047c4</key>
+		<string>https://sonicbirth.svn.sourceforge.net/svnroot/sonicbirth</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SonicBirth_v1/SonicBirth.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>484ce1e7-802b-0410-904d-8655360047c4</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>484ce1e7-802b-0410-904d-8655360047c4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>484ce1e7-802b-0410-904d-8655360047c4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sonicbirth</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,109 @@
+
+<!--#set var="SB_TITLE" value="Screenshots" -->
+<!--#set var="CHANGE_MIN_WIDTH" value="750" -->
+<!--#include virtual="ssi/header.shtml" -->
+
+<!--Right column-->
+<b>See the plugins interfaces:</b><br />
+
+<ul>
+	<li><a href="img/plgn/5_Band_Eq.jpg">5 Band Eq</a></li>
+	<li><a href="img/plgn/20_Band_Eq.jpg">20 Band Eq</a></li>
+	<li><a href="img/plgn/Bassdrum.jpg">Bassdrum</a></li>
+	<li><a href="img/plgn/Compressor.jpg">Compressor</a></li>
+	<li><a href="img/plgn/Flying_monkey_synth.jpg">Flying Monkey Synth</a></li>
+	<li><a href="img/plgn/Gate.jpg">Gate</a></li>
+	<li><a href="img/plgn/Limiter.jpg">Limiter</a></li>
+	<li><a href="img/plgn/MIDI_Filter.jpg">MIDI Filter</a></li>
+	<li><a href="img/plgn/Multiband_freeverb.jpg">Multiband Freeverb</a></li>
+	<li><a href="img/plgn/Multiband_scraper.jpg">Multiband Scraper</a></li>
+	<li><a href="img/plgn/Rainy_synth.jpg">Rainy Synth</a></li>
+	<li><a href="img/plgn/Simple_reverb.jpg">Simple Reverb</a></li>
+	<li><a href="img/plgn/Width_Enhancer.jpg">Width Enhancer</a></li>
+	<li><a href="img/plgn/Valve_warmer.jpg">Valve Warmer</a></li>
+</ul>
+
+<!--#include virtual="ssi/mainColumn.ssi" -->
+<!--Main column-->
+<h2>Visual tour</h2>
+
+<!--Circuit design-->
+<p>
+	Designing the circuit:
+</p>
+<center><img src="img/circuit_design.png" alt="Circuit design"
+		style="border-style: solid; border-width: 1px 1px 1px 1px"/></center>
+<p>
+	This circuit takes the input signal, as given by the host application.
+	Then it splits it using a crossover element. The low and high frequencies
+	are then independently degraded using scraper elements. These modified
+	signals are then added together and output back to the host.
+</p>
+
+<!--Information window-->
+<p>
+	When you select a particuliar element, informations about it are given
+	in a window. Here are the informations given for the scrap element:
+</p>
+<center><img src="img/info_window.png" alt="Information window"
+		style="border-style: solid; border-width: 1px 1px 1px 1px"/></center>
+<p>
+	So this basically says that the sr and bd inputs should be feed with
+	values between 0 and 1. That is why knobs were connected to these inputs.
+</p>
+
+<!--Settings window-->
+<p>
+	When you select an element, another window shows the settings of that element,
+	if applicable. This is what it looks like for the 'Crossover freq.' knob:
+</p>
+<center><img src="img/setting_window.png" alt="Settings window"
+		style="border-style: solid; border-width: 1px 1px 1px 1px"/></center>
+<p>
+	As you can see, many things about a knob can be specified.
+</p>
+
+<!--Sound window-->
+<p>
+	You can test the functionnality of your plugin directly while
+	designing it:
+</p>
+<center><img src="img/sound_window.png" alt="Sound window"
+		style="border-style: solid; border-width: 1px 1px 1px 1px"/></center>
+
+<!--MIDI window-->
+<p>
+	You can also test MIDI functionnality of your plugin from SoncBirth:
+</p>
+<center><img src="img/midi_window.png" alt="MIDI window"
+		style="border-style: solid; border-width: 1px 1px 1px 1px"/></center>
+
+<!--Gui design-->
+<p>
+	Using SonicBirth, you can also create a custom Gui.
+	Prepare a background image, load it, then place the knobs
+	and other elements:
+</p>
+<center><img src="img/gui_design.png" alt="Gui design"
+		style="border-style: solid; border-width: 1px 1px 1px 1px"/></center>
+
+<!--Gui results-->
+<p>
+	Here's how it will look in GarageBand:
+</p>
+<center><img src="img/gui_custom.png" alt="Gui custom"
+		style="border-style: solid; border-width: 1px 1px 1px 1px"/></center>
+
+<p>
+	The same plugin is still completly functionnal
+	when the custom gui checkbox is off:
+</p>
+<center><img src="img/gui_generic.png" alt="Gui generic"
+		style="border-style: solid; border-width: 1px 1px 1px 1px"/></center>
+		
+<p>
+	If you prefer to see a multi-band reverb, download SonicBirth
+	and try one right now!
+</p>
+
+<!--#include virtual="ssi/footer.ssi" -->

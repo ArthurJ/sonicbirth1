@@ -1,0 +1,158 @@
+/* print css */
+
+@charset "iso-8859-1";
+
+
+/* base.css */
+
+#pageWrapper
+{
+	margin: 0;
+	width: auto;
+	min-width: 500px;
+}
+#outerColumnContainer
+{
+	z-index: 1;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 15em;
+}
+#innerColumnContainer
+{
+	z-index: 2;
+	width: 100%;
+}
+* html #innerColumnContainer
+{
+	position: relative;
+}
+#contentColumn
+{
+	/*margin: 0 -1px;*/
+	margin: 0 -1px 0 0; /* fix for two column */
+	width: 100%;
+}
+#leftColumn, #rightColumn, #contentColumn
+{
+	float: left;
+	position: relative;
+	z-index: 10;
+	overflow: visible;
+}
+#rightColumn
+{
+	float: right;
+	width: 15em;
+	margin: 0 -15em 0 1px;
+}
+#leftColumn
+{
+	width: 15em;
+	margin: 0 1px 0 -15em;
+}
+#footer
+{
+	position: relative;
+}
+#masthead h1
+{
+	display: inline;
+}
+.clear
+{
+	clear: both;
+}
+.hide, #oldBrowserNotice, .ieSixCharDupBug
+{
+	display: none;
+}
+html[xmlns] .mozclear
+{
+	border-bottom: 1px solid;
+	border-color: transparent;
+	margin-bottom: -1px;
+}
+#contentColumn
+{
+	border-width: 0;
+}
+
+* html #pageWrapper
+{
+	word-wrap: break-word;
+}
+
+/* fonts.css */
+
+body
+{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 100.1%;
+}
+#pageWrapper
+{
+	font-size: 80%;
+}
+#footer
+{
+	text-align: center;
+}
+
+:root code
+{
+	font-size: 120%;
+}
+
+h1
+{
+	font-size: 210%;
+}
+h2
+{
+	font-size: 180%;
+}
+h3
+{
+	font-size: 140%;
+}
+h4
+{
+	font-size: 126%;
+}
+h5
+{
+	font-size: 110%;
+}
+h6
+{
+	font-size: 100%;
+}
+
+/**/
+
+#leftColumn, #rightColumn, #contentColumn
+{
+	float: none;
+}
+#rightColumn, #leftColumn, .hnav, .printHide
+{
+	display: none;
+}
+#outerColumnContainer, #innerColumnContainer
+{
+	border-left-width: 0;
+	border-right-width: 0;
+}
+#masthead, #footer
+{
+	border: solid 1px #000;
+	border-width: 1px 0;
+	padding: 0.5em;
+}
+a
+{
+	text-decoration: none;
+	background-color: inherit;
+	color: inherit;
+}

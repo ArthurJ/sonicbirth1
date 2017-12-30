@@ -1,0 +1,46 @@
+
+<!--#set var="SB_TITLE" value="Support" -->
+<!--#include virtual="ssi/header.shtml" -->
+
+<!--Right column-->
+<b>Email address:</b>
+<br /><br />
+
+SonicBirth is no longer maintained. If you have any questions about the source code,
+or really need to contact the author, you can do so at the following address:<br /><br />
+
+makira ([at]) metaTIGERkine.com; minus the big cat<br /><br />
+
+All questions about usage should be directed to the forum instead.
+
+<!--#include virtual="ssi/mainColumn.ssi" -->
+<!--Main column-->
+<h2>User support</h2>
+<p>
+	If you have any question, take a look in the <a href="files/Documentation.pdf">documentation</a> first:
+	it is likely that it contains the answer to your question.
+	SonicBirth's manual is also accessible from the Help menu of the main application.
+</p>
+
+<p>
+	If the provided documention doesn't answer your question,
+	or is not helpful, send an email. It should normally be answered in less than
+	24 hours.
+</p>
+
+<p>
+	Customer feedback of any kind is welcomed. 
+	User feedback drives future development efforts - please never hesitate
+	to send your thoughts, comments, or improvement ideas.
+</p>
+
+<h4>Community support</h4>
+
+<p>
+	There is a community driven support
+	<a href="http://www.kvraudio.com/forum/viewforum.php?f=124">forum</a>,
+	on kvraudio. Take a look at it.
+</p>
+
+
+<!--#include virtual="ssi/footer.ssi" -->

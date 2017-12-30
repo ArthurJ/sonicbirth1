@@ -1,0 +1,32 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeCustomColor = id; }; 
+            CLASS = SBArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mColorWellBack = NSColorWell; 
+                mColorWellContour = NSColorWell; 
+                mColorWellFront = NSColorWell; 
+                mUseCustomColorBt = NSButton; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {chooseAudioUnit = id; chooseChannelConfig = id; showAuGui = id; }; 
+            CLASS = SBAudioUnit; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mAudioUnitChannelConfigPopUp = NSPopUpButton; 
+                mAudioUnitListPopUp = NSPopUpButton; 
+                mParameterTable = NSTableView; 
+                mSettingsView = NSView; 
+            }; 
+            SUPERCLASS = SBArgument; 
+        }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }
+    ); 
+    IBVersion = 1; 
+}

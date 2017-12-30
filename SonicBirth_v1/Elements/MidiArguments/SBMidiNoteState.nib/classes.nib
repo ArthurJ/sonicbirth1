@@ -1,0 +1,39 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBArgument; LANGUAGE = ObjC; SUPERCLASS = SBElement; }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }, 
+        {
+            ACTIONS = {changedChannel = id; }; 
+            CLASS = SBMidiArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mChannelPopUp = NSPopUpButton; }; 
+            SUPERCLASS = SBSimpleArgument; 
+        }, 
+        {
+            ACTIONS = {addNote = id; removeNote = id; }; 
+            CLASS = SBMidiNoteState; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mNoteDelete = NSButton; 
+                mNoteTableView = NSTableView; 
+                mSettingsView = NSView; 
+            }; 
+            SUPERCLASS = SBMidiArgument; 
+        }, 
+        {
+            ACTIONS = {changedAverage = id; pushedRealtimeButton = id; }; 
+            CLASS = SBSimpleArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mAverageSlider = NSSlider; 
+                mAverageTF = NSTextField; 
+                mNameTF = NSTextField; 
+                mRealtimeButton = NSButton; 
+            }; 
+            SUPERCLASS = SBArgument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

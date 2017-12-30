@@ -1,0 +1,60 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeCustomColor = id; }; 
+            CLASS = SBArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mColorWellBack = NSColorWell; 
+                mColorWellContour = NSColorWell; 
+                mColorWellFront = NSColorWell; 
+                mUseCustomColorBt = NSButton; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changedAverage = id; pushedRealtimeButton = id; }; 
+            CLASS = SBSimpleArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mAverageSlider = NSSlider; 
+                mAverageTF = NSTextField; 
+                mNameTF = NSTextField; 
+                mRealtimeButton = NSButton; 
+            }; 
+            SUPERCLASS = SBArgument; 
+        }, 
+        {
+            ACTIONS = {
+                changedImages = id; 
+                changedShowNumber = id; 
+                changedTypeOfCell = id; 
+                changedTypeOrMapping = id; 
+                changedWholeNumberOnly = id; 
+                sliderMoved = id; 
+            }; 
+            CLASS = SBSlider; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mBackImageView = NSImageView; 
+                mDefaultTF = NSTextField; 
+                mFrontImageView = NSImageView; 
+                mMappingPopUp = NSPopUpButton; 
+                mRangeMaxTF = NSTextField; 
+                mRangeMinTF = NSTextField; 
+                mSettingsView = NSView; 
+                mShowNumber = NSButton; 
+                mSlider = NSSlider; 
+                mSliderHeightTF = NSTextField; 
+                mSliderWidthTF = NSTextField; 
+                mTypeOfCellPopUp = NSPopUpButton; 
+                mTypePopUp = NSPopUpButton; 
+                mWholeNumberOnlyBt = NSButton; 
+            }; 
+            SUPERCLASS = SBSimpleArgument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

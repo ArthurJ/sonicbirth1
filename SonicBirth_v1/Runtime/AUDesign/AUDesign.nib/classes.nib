@@ -1,0 +1,73 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                copy = id; 
+                cut = id; 
+                duplicate = id; 
+                importCircuit = id; 
+                insertElement = id; 
+                mini = id; 
+                newStringCancel = id; 
+                newStringOk = id; 
+                nextLevel = id; 
+                paste = id; 
+                prevLevel = id; 
+                saveCircuit = id; 
+                setMinSizeToCurrentSize = id; 
+            }; 
+            CLASS = SBCircuitView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mCurrentLevel = NSTextField; 
+                mElementsPopUp = NSPopUpButton; 
+                mGetStringDesc = NSTextField; 
+                mGetStringTF = NSTextField; 
+                mGetStringWindow = NSWindow; 
+                mInfoServer = SBInfoServer; 
+                mMini = NSButton; 
+                mNextLevel = NSButton; 
+                mPrevLevel = NSButton; 
+                mSettingsServer = SBSettingsServer; 
+                mWindow = NSWindow; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {showPanel = id; }; 
+            CLASS = SBInfoServer; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mInfoPanel = NSPanel; mInformations = NSTextView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = SBNoResizeView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            CLASS = SBRuntimeDesignViewFactory; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                m1 = NSObject; 
+                m2 = NSObject; 
+                m3 = NSObject; 
+                m4 = NSObject; 
+                m5 = NSObject; 
+                mAUView = NSView; 
+                mCircuitView = SBCircuitView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = SBScrollView; LANGUAGE = ObjC; SUPERCLASS = NSScrollView; }, 
+        {
+            ACTIONS = {showPanel = id; }; 
+            CLASS = SBSettingsServer; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mEmptySettings = NSView; 
+                mScrollView = NSScrollView; 
+                mSettingsPanel = NSPanel; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

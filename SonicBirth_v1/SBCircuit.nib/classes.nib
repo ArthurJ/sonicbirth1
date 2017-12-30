@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changedWiresBehind = id; }; 
+            CLASS = SBCircuit; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mCommentsTF = NSTextField; 
+                mHeightTF = NSTextField; 
+                mInoutTable = NSTableView; 
+                mNameTF = NSTextField; 
+                mNumberOfInputTF = NSTextField; 
+                mNumberOfOutputTF = NSTextField; 
+                mSettingsView = NSView; 
+                mWidthTF = NSTextField; 
+                mWiresBehindButton = NSButton; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }
+    ); 
+    IBVersion = 1; 
+}

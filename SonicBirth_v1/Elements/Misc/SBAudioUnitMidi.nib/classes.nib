@@ -1,0 +1,51 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changeCustomColor = id; }; 
+            CLASS = SBArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mColorWellBack = NSColorWell; 
+                mColorWellContour = NSColorWell; 
+                mColorWellFront = NSColorWell; 
+                mUseCustomColorBt = NSButton; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {chooseAudioUnit = id; chooseChannelConfig = id; showAuGui = id; }; 
+            CLASS = SBAudioUnitMidi; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mAudioUnitChannelConfigPopUp = NSPopUpButton; 
+                mAudioUnitListPopUp = NSPopUpButton; 
+                mParameterTable = NSTableView; 
+                mSettingsView = NSView; 
+            }; 
+            SUPERCLASS = SBMidiArgument; 
+        }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }, 
+        {
+            ACTIONS = {changedChannel = id; }; 
+            CLASS = SBMidiArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mChannelPopUp = NSPopUpButton; }; 
+            SUPERCLASS = SBSimpleArgument; 
+        }, 
+        {
+            ACTIONS = {changedAverage = id; pushedRealtimeButton = id; }; 
+            CLASS = SBSimpleArgument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mAverageSlider = NSSlider; 
+                mAverageTF = NSTextField; 
+                mNameTF = NSTextField; 
+                mRealtimeButton = NSButton; 
+            }; 
+            SUPERCLASS = SBArgument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

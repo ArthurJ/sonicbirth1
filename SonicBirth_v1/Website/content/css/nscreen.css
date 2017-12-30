@@ -1,0 +1,522 @@
+/* screen css */
+
+@charset "iso-8859-1";
+
+/* v4.css*/
+
+body
+{
+	/*/*//*/ width: 130%;			/* nn4 fix */
+}
+.hide
+{
+	display: none;
+}
+.clear, #nsFooterClear
+{
+	clear: both;
+}
+.inside
+{
+	padding: 0.5em;
+}
+#oldBrowserNotice
+{
+	text-align: center;
+	display: block;		/* overriding the display:none on this block
+				   so that version 4 browsers still see the
+				   old browser notice */
+}
+#contentColumn
+{
+	/*/*/ margin: 0 12em;			/* ie4 fix */
+}
+#leftColumn
+{
+	float: left;
+	width: 12em;
+	/*/*/ margin-right: -12em;		/* ie4 fix */
+}
+#rightColumn
+{
+	float: right;
+	width: 12em;
+	/*/*/ text-align: left;			/* ie4 fix */
+	/*/*/ margin-left: -12em;		/* ie4 fix */
+}
+#masthead, .hnav, #contentColumn, #contentColumn .inside, #footer
+{
+	/*/*//*/ border: none;			/* nn4 fix */
+	/*/*//*/ margin: 0;			/* nn4 fix */
+}
+#nsFooterClear
+{
+	/*/*//*/ display: block;		/* nn4 fix */
+}
+#footer
+{
+	text-align: center;
+}
+
+
+/*-*-*- hnav.css -*-*-*/
+
+/*/*//*/
+	.hnav
+	{
+		text-align: center;
+		padding: none;
+	}
+	.hnav ul, .hnav ul li
+	{
+		list-style-type: none;
+		display: inline;
+	}
+/*--> IE4 does not do inline lists, so this CSS is shown only to NN4. <--*/
+
+
+/*-*-*- borders.css -*-*-*/
+
+#masthead, #footer, .hnav, #contentColumn
+{
+	border: solid 1px #000;
+}
+#pageWrapper
+{
+	/*/*//*/ border: solid 1px #000;	/* hide from ie4 */
+}
+#masthead
+{
+	/*/*//*/ border-width: 0 0 1px 0;	/* hide from ie4 */
+}
+#footer
+{
+	/*/*//*/ border-width: 1px 0 0 0;	/* hide from ie4 */
+}
+.hnav
+{
+	/*/*/ border-top-width: 0;		/* hide from nn4 */
+	/*/*//*/ border-width: 1px 0;		/* hide from ie4 */
+}
+#contentColumn
+{
+	margin-top: -1px;
+}
+
+/*-*-*- colors.css -*-*-*/
+
+body
+{
+	background-color: #fff;
+	/*/*//*/ background-color: #ccc;	/* nn4 coloring */
+	color: #000;
+}
+#pageWrapper
+{
+	background-color: #fff;
+	color: #000;
+}
+#contentcolumn					/* selector case hack */
+{
+	color: #000;
+	background-color: #eee;
+}
+
+
+/*-*-*- gutters.css (or what's left) -*-*-*/
+
+#pageWrapper
+{
+	margin: 0 1em;
+}
+#masthead
+{
+	/*/*//*/ padding-bottom: 0;		/* nn4 fix */
+}
+#masthead h1
+{
+	/*/*/ margin: 0;			/* ie4 fix */
+}
+.hnav ul
+{
+	/*/*/ margin-top: 0;			/* ie4 fix */
+	/*/*//*/ padding: 0.1em 0 0.4em ;	/* nn4 fix */
+}
+
+/* base.css */
+
+#pageWrapper
+{
+	margin: 0;
+	width: auto;
+	min-width: 500px;
+}
+#outerColumnContainer
+{
+	z-index: 1;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 15em;
+}
+#innerColumnContainer
+{
+	z-index: 2;
+	width: 100%;
+}
+* html #innerColumnContainer
+{
+	position: relative;
+}
+#contentColumn
+{
+	/*margin: 0 -1px;*/
+	margin: 0 -1px 0 0; /* fix for two column */
+	width: 100%;
+}
+#leftColumn, #rightColumn, #contentColumn
+{
+	float: left;
+	position: relative;
+	z-index: 10;
+	overflow: visible;	/* fix for IE italics bug */
+}
+#rightColumn
+{
+	float: right;
+	width: 15em;
+	margin: 0 -15em 0 1px;
+}
+#leftColumn
+{
+	width: 15em;
+	margin: 0 1px 0 -15em;
+}
+#footer
+{
+	position: relative;
+}
+#masthead h1
+{
+	display: inline;
+}
+.clear
+{
+	clear: both;
+}
+.hide, #oldBrowserNotice, .ieSixCharDupBug
+{
+	display: none;
+}
+html[xmlns] .mozclear
+{
+	border-bottom: 1px solid;
+	border-color: transparent;
+	margin-bottom: -1px;
+}
+#contentColumn
+{
+	border-width: 0;
+}
+* html #pageWrapper
+{
+	word-wrap: break-word;
+}
+
+
+/* fonts.css*/
+
+body
+{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 100.1%;
+}
+#pageWrapper
+{
+	font-size: 80%;
+}
+#footer
+{
+	text-align: center;
+}
+:root code
+{
+	font-size: 120%;
+}
+h1
+{
+	font-size: 210%;
+}
+h2
+{
+	font-size: 180%;
+}
+h3
+{
+	font-size: 140%;
+}
+h4
+{
+	font-size: 126%;
+}
+h5
+{
+	font-size: 110%;
+}
+h6
+{
+	font-size: 100%;
+}
+
+/* hnav.css */
+
+.hnav
+{
+	white-space: nowrap;
+	margin: 0;
+	padding: 3px 0 4px 0;
+}
+.hnav ul span.divider
+{
+	display: none;
+}
+* html .hnav/* Hide from IE5/Mac (& IE5.0/Win) */
+{
+	height: 1%;
+}
+* html .HNAV
+{
+	height: auto;
+	padding: 0;
+}
+.hnav ul
+{
+	text-align: center;
+	list-style-type: none;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+}
+.hnav ul li
+{
+	display: inline;
+	white-space: nowrap;
+	margin: 0;
+}
+.hnav ul li a
+{
+	text-decoration: none;
+	margin: 0 -1px 0 0;
+	padding: 3px 10px 4px 10px;
+	border-left: solid 1px #000;
+	border-right: solid 1px #000;
+}
+* html .HNAV ul li a
+{
+	width: 1%;
+}
+.hnav ul li a:hover
+{
+	text-decoration: none;
+}
+
+/* vnav.css */
+
+.vnav ul, .vnav ul li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: block;
+}
+.vnav ul
+{
+	border: solid 1px #000;
+	border-bottom-width: 0;
+}
+.vnav ul li
+{
+	border-bottom: solid 1px #000;
+}
+.vnav ul li a
+{
+	display: block;
+	text-decoration: none;
+	padding: 2px 10px;
+}
+* html .vnav ul li a/* hide from IE5.0/Win & IE5/Mac */
+{
+	height: 1%;
+}
+* html .vnav ul
+{
+	position: relative;
+}
+.vnav h3
+{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-size: 126%;
+}
+
+/* colors.css */
+
+body
+{
+	background-color: rgb(230,235,245);
+	color: #000; /*#fff;*/
+}
+#outerColumnContainer
+{
+	border-left-color: #000;	/* left hand column background color */
+	border-right-color: rgb(240,240,240); /* right hand column background color */
+}
+#masthead
+{
+	background-color: rgb(255,203,54);
+	color: #000;
+}
+#footer
+{
+	background-color: rgb(134,167,218);
+	color: #000;
+}
+#outerColumnContainer, #contentcolumn
+{
+	background-color: rgb(255,255,240);	/* background color of center column */
+	color: #000;
+}
+#leftColumn, #rightColumn, #contentColumn
+{
+	color: #000;
+}
+.vnav ul li a
+{
+	color: #336;
+	background-color: #cc9;
+}
+#rightColumn .vnav ul li a:hover, .vnav ul li a:hover
+{
+	background-color: #336;
+	color: #fff;
+}
+#rightColumn .vnav ul li a
+{
+	color: #336;
+	background-color: #ddb;
+}
+.hnav, .hnav ul li a
+{
+	background-color: rgb(255,223,131); /* horizontal nav bar */
+	color: #224;
+}
+.hnav ul li a:hover
+{
+	background-color: rgb(235,175,0); /* horizontal nav bar mouse over */
+	color: #000;
+}
+#pageWrapper, #innerColumnContainer, #masthead, #footer, .hnav
+{
+	border-color: #000;
+}
+
+/* gutters.css */
+
+body
+{
+	margin: 0;
+	padding: 2em;
+}
+p, h1, h2, h3, h4, h5, h6
+{
+	margin: 1em 0;
+}
+.inside
+{
+	padding: 0 1.5em;
+}
+#leftColumn, #centerColumn, #rightColumn, #masthead
+{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+#masthead, #footer
+{
+	padding: 1em;
+}
+.vnav
+{
+	margin: 1em 0;
+}
+html>body #footer
+{
+	padding-bottom: 1.01em;
+}
+
+/* borders.css */
+
+#pageWrapper
+{
+	border-style: solid;
+	border-width: 0 1px;
+}
+#outerColumnContainer
+{
+
+}
+#innerColumnContainer
+{
+	border-style: solid;
+	border-width: 0 1px;
+	margin: 0 -1px;	
+}
+* html #outercolumncontainer
+{
+	/* IE5.0/Win fix for 1px whitespace between masthead and body. */
+	margin-top: -1px;
+	border-top: solid 1px #000;
+}
+#masthead
+{
+	border-style: solid;
+	border-width: 1px 0;
+}
+.hnav
+{
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+#footer
+{
+	border-style: solid;
+	border-width: 1px 0;
+}
+
+
+/* twoColumnsRight.css */
+
+html>body #leftColumn
+{
+	display: none;
+}
+* html #leftColumn *
+{
+	display: none;
+}
+#leftColumn
+{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+	border: none;
+}
+#outerColumnContainer, #innerColumnContainer
+{
+	border-left-width: 0;
+}
+#innerColumnContainer
+{
+	margin-left: 0;
+}
+

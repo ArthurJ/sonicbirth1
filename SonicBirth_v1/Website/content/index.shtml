@@ -1,0 +1,285 @@
+
+<!--#set var="SB_TITLE" value="About" -->
+<!--#include virtual="ssi/header.shtml" -->
+
+<!--Right column-->
+<b>News</b>
+<hr />
+
+<b>November 18, 2007</b>
+<p>Version 1.3.0 released.</p>
+<p>
+	This release contains many bug fixes:<br/><br/>
+	- Many VST bugs were fixed<br/>
+	- Popup menu fixed in carbon views<br/>
+	- VST presets<br/>
+	- Default AU preset<br/>
+	- Color panel alpha fix<br/>
+	- New display module<br/>
+	- Fixed crash related to points presets<br/>
+	
+</p>
+
+<p>
+	<a href="http://downloads.sourceforge.net/sonicbirth/SonicBirth_v130.dmg">Download</a> SonicBirth v1.3.0 (Universal binary)
+</p>	
+<p>
+	<a href="source.shtml">Develop</a> SonicBirth - fix bugs / add features.
+</p>
+
+<b>March 18, 2007</b>
+<p>Version 1.2.0 released.</p>
+<p>
+	SonicBirth is now freeware, and open source (GPL). We are looking for developer to
+	further work on and enhance SonicBirth. Work for the major version of SonicBirth
+	is starting. This next version will be a complete rewrite and a commercial product.
+</p>
+
+
+
+
+<!--#include virtual="ssi/mainColumn.ssi" -->
+<!--Main column-->
+<h2>What is SonicBirth?</h2>
+
+<!-- ********* -->
+<b>General overview</b>
+<img src="img/logo_80.png"
+		alt="SonicBirth Application Logo"
+		style="float: left; margin-top:10px;
+			margin-bottom:10px; margin-right:10px; display:block;"/>
+<p>
+	SonicBirth is an AudioUnit designing application. The first in its category,
+	it allows users to build their own AudioUnit plugins, either by working with
+	existing circuits or by creating circuits completely from scratch. SonicBirth
+	is also a free AudioUnits package, as it comes bundled with a set of plugins designed
+	for standalone use as plugins as well as pre-constructed circuits to modify or
+	build upon for creating new plugins. Whether you're looking for traditional eqs,
+	compressors, and reverbs, or softsynths, distortion, and filters,
+	etc., SonicBirth allows you unprecedented freedom and creativity over your sound.
+</p>
+
+<p>
+	SonicBirth is based on a powerful, flexible engine. Every plugin can be used in 32 bits
+	or 64 bits for added precision.	Since all plugins share this engine, any improvement in
+	speed will benefit all of them.
+</p>
+
+<p>
+Take a look at the
+	<a href="screenshots.shtml">visual tour</a>
+	to see how simple and powerful SonicBirth is.
+</p>
+
+<p><i>
+	SonicBirth got a
+	<a href="http://developer.apple.com/ada/">special mention</a> 
+	in the Apple Design Awards 2005.
+</i></p>
+
+<!-- ********* -->
+<br />
+<b>Custom interfaces</b>
+<br />
+<p>
+	SonicBirth allows you to easily create custom interfaces to your plugins.
+	You can use images to create the background, and even your own
+	knobs, faders, buttons, pads, etc, simply by drag & dropping an image file.
+</p>
+
+
+<!-- ********* -->
+<br />
+<b>In host design</b>
+<br />
+<a href="img/sb_au_design.jpg">
+<img src="img/sb_au_design_small.jpg"
+			alt="In host design" 
+			style="float: left; margin-top:10px;
+			margin-bottom:10px; margin-right:10px; display:block;"/>
+</a>
+<p>
+	With SonicBirth, you can also create audio effects and instruments directly in the host,
+	saving you time and allowing you to work directly in your usual environment. You can also
+	use it to modify the behavior of third party AudioUnits by automatically modifying its parameters
+	or by adding processing elements on its inputs or outputs.
+</p>
+
+
+<!-- ********* -->
+<br />
+<b>The prebuilt plugins</b>
+<img src="img/plugin_icon.png"
+			alt="Plugin icon"
+			style="float: right; margin-top:10px;
+			margin-bottom:10px; margin-left:10px; display:block;"/>
+<p>
+	These are the currently available, free and fully working, prebuilt plugins.
+	New ones will be added over time.
+</p>
+
+<ul>
+
+	<li>
+		<em>Convolution reverb</em>: Reverb using impulse responses.
+	</li>
+	
+	<li>
+		<em>Graphic equalizer</em>: Linear phase convolving graphic equalizer.
+	</li>
+
+	<li>
+		<a href="img/plgn/Flying_monkey_synth.jpg"><img src="img/plgn/Flying_monkey_synth_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Flying Monkey Synth</em>: A powerful, flexible soft synt. Requires an AU host capable of loading cocoa guis.
+	</li>
+
+	<li>
+		<a href="img/plgn/Multiband_scraper.jpg"><img src="img/plgn/Multiband_scraper_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Multiband Scraper</em>: Degrades the bit depth and sample rate
+		of the signal independantly over and under a user selectable
+		frequency.
+	</li>
+	
+	<li>
+		<a href="img/plgn/Simple_reverb.jpg"><img src="img/plgn/Simple_reverb_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Simple Reverb</em>: A simple reverb based on Jezar's Freeverb, with the
+		the addition of a feedback delay line and selectable filter.
+	</li>
+	
+	<li>
+		<a href="img/plgn/Multiband_freeverb.jpg"><img src="img/plgn/Multiband_freeverb_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Multiband Freeverb</em>: Jezar's Freeverb with a twist!
+	</li>
+	
+	<li>
+		<a href="img/plgn/MIDI_Filter.jpg"><img src="img/plgn/MIDI_Filter_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>MIDI Filter</em>: A MIDI controllable, lowpass/highpass selectable filter.
+		Frequency is set by the note pressed.
+	</li>
+	
+	<li>
+		<a href="img/plgn/Bassdrum.jpg"><img src="img/plgn/Bassdrum_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Bassdrum</em>: A bassdrum synthesizer, with variable slope, punch and distortion.
+	</li>
+	
+	<li>
+		<a href="img/plgn/Rainy_synth.jpg"><img src="img/plgn/Rainy_synth_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Rainy synth</em>: A simple synth showing a filter used in an unusual way
+		to create a new sound.
+	</li>
+	
+	<li>
+		<a href="img/plgn/5_Band_Eq.jpg"><img src="img/plgn/5_Band_Eq_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>5 Band Eq</em>: A five band, with variable center frequency, Q and gain,
+		completely MIDI controllable.
+	</li>
+	
+	<li>
+		<a href="img/plgn/20_Band_Eq.jpg"><img src="img/plgn/20_Band_Eq_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>20 Band Eq</em>: Simply a basic twenty band eq.
+	</li>
+	
+	<li>
+		<a href="img/plgn/Width_Enhancer.jpg"><img src="img/plgn/Width_Enhancer_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Width Enhancer</em>: Stereo width enhancer/nullifier.
+	</li>
+	
+	<li>
+		<a href="img/plgn/Limiter.jpg"><img src="img/plgn/Limiter_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Limiter</em>: a seven stages, 2 ms look-ahead limiter.
+	</li>
+	
+	<li>
+		<a href="img/plgn/Compressor.jpg"><img src="img/plgn/Compressor_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Compressor</em>: Audio compression with variable attack, release, threshold, and knee softness.
+	</li>
+	
+	<li>
+		<a href="img/plgn/Gate.jpg"><img src="img/plgn/Gate_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Gate</em>: Audio gate with variable attack, release.
+	</li>
+	
+	<li>
+		<a href="img/plgn/Valve_warmer.jpg"><img src="img/plgn/Valve_warmer_small.jpg" alt="Plugin interface" style="margin-top:10px;"/></a><br />
+		<em>Valve Warmer</em>: A warm valve distortion simulator.
+	</li>
+	
+	<li>
+		<em>Swamp Buffer</em>: Record and replay live audio.
+	</li>
+	
+	<li>
+		<em>Funky repeater</em>: Repeats parts of the signal depending on the envelope.
+	</li>
+	
+	<li>
+		<em>DC Blocker</em>: Removes DC offset.
+	</li>
+	
+	<li>
+		<em>Hum remover</em>: Removes 50 or 60 Hz hum.
+	</li>
+
+	<li>
+		<em>Buff rice</em>: Plugin created by Uli Reuter. Cyclic, hypnotic audio chop and replay (try it!).
+	</li>
+	
+	<li>
+		More to come!
+	</li>
+</ul>
+
+<!-- ********* -->
+<br />
+<b>Developing and sharing your own plugin</b>
+<br />
+<a href="screenshots.shtml">
+<img src="img/circuit_design_mini.png"
+			alt="Circuit design"
+			style="float: left; margin-top:10px;
+			margin-bottom:10px; margin-right:10px; display:block;"/>
+</a>
+<p>
+	SonicBirth allows you to modify the prebuilt plugins 
+	and create new ones from scratch. For example, you might want
+	to take the Multiband Scraper, and make the frequency
+	controllable via a MIDI keyboard instead of an on-screen slider.
+</p>
+<p>
+	You could take two circuits (elements patched together),
+	and mix them in an original way! SonicBirth allows you to
+	create and modify a plugin while it is playing, so you get
+	immediate results.
+</p>
+<p>
+	<b>Best of all, you can share the results with everyone!</b>
+	(If you wish, you may also submit your plugins for them to be bundled with the main application.)
+</p>
+
+
+<!-- ********* -->
+<br />
+<b>Try it out!</b>
+<p>
+	
+	Hop on to our
+	<a href="download.shtml">download page</a>
+	and try the last version.
+</p>
+
+
+<!-- ********* -->
+<br />
+<b>System Requirements</b>
+<p>
+	SonicBirth requires MacOS 10.3.9, QuickTime 7,
+	and any host application that supports the AudioUnit or VST plugin format.
+</p>
+
+<!-- ********* -->
+<p><small>The first prototype of SonicBirth has been development as part of
+a university project at <a href="http://www.polymtl.ca">&Eacute;cole Polytechnique de Montr&eacute;al</a>.
+It has since been developped as a full product.</small></p>
+
+
+<!--#include virtual="ssi/footer.ssi" -->

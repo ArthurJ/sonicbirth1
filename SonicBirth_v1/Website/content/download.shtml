@@ -1,0 +1,49 @@
+
+<!--#set var="SB_TITLE" value="Download" -->
+<!--#include virtual="ssi/header.shtml" -->
+
+<!--Right column-->
+
+<small>
+	<p>Please note:</p>
+	<i>
+		<p>
+			SonicBirth is now completly free. Version 1.3.0 is not, however,
+			compatible with plugins created by older versions.
+		</p>
+	</i>
+</small>
+
+
+<!--#include virtual="ssi/mainColumn.ssi" -->
+<!--Main column-->
+
+<img src="img/logo_128.png"
+		alt="SonicBirth Application Logo"
+		style="float: left; margin-bottom:10px; margin-right:10px; display:block;"/>
+<h2>SonicBirth v1.3.0</h2>
+<p>
+	Make sure
+	you read the installation instructions, and the documentation, which is available
+	from the main application using the Help menu.
+</p>
+
+<br /><br />
+<b>System Requirements</b>
+<p>
+	SonicBirth requires MacOS 10.3.9, QuickTime 7,
+	and any host application that supports the AudioUnit or VST plugin format.
+</p>
+
+<br />
+
+<center>
+	<p>
+		<a href="http://downloads.sourceforge.net/sonicbirth/SonicBirth_v130.dmg">
+			<b>Download SonicBirth v1.3.0 (Universal binary)</b>
+		</a>
+	</p>
+</center>
+
+
+<!--#include virtual="ssi/footer.ssi" -->

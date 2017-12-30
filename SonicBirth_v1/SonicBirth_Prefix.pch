@@ -1,0 +1,35 @@
+/*
+	Copyright 2005-2007 Antoine Missout
+	Released under GPL.
+	See http://www.gnu.org/copyleft/gpl.txt
+*/
+//
+// Prefix header for all source files
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#include "SBTypes.h"
+#include "SBTimeStamp.h"
+#include "FrameworkUtils.h"
+#include "openGlWrap.h"
+
+#ifdef __OBJC__
+	#import "SBMathInline.h"
+	#import "SBPoint.h"
+	#import "CocoaAdditions.h"
+#endif
+
+#include <math.h>
+
+/* __fastmath_floor and __fastmath_ceil are not working properly */
+/* so use libc functions */
+#if defined(__FAST_MATH__) && !defined(__cplusplus)
+	#undef floorf
+	#undef ceilf
+	#undef floor
+	#undef ceil
+#endif
+

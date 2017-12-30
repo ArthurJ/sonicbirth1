@@ -1,0 +1,24 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {changedFreezeWhenFull = id; changedResolution = id; }; 
+            CLASS = SBDebugOsc; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mBottomTF = NSTextField; 
+                mFreezeWhenFullBt = NSButton; 
+                mHeightTF = NSTextField; 
+                mResolutionSlider = NSSlider; 
+                mResolutionTF = NSTextField; 
+                mSettingsView = NSView; 
+                mTopTF = NSTextField; 
+                mWidthTF = NSTextField; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }
+    ); 
+    IBVersion = 1; 
+}

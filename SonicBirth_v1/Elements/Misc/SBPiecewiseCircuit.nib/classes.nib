@@ -1,0 +1,21 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBAudioProcess; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SBElement; LANGUAGE = ObjC; SUPERCLASS = SBAudioProcess; }, 
+        {
+            ACTIONS = {createRange = id; deleteRange = id; }; 
+            CLASS = SBPiecewiseCircuit; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mInputTF = NSTextField; 
+                mOutputTF = NSTextField; 
+                mRangeDelete = NSButton; 
+                mRangesTableView = NSTableView; 
+                mSettingsView = NSView; 
+            }; 
+            SUPERCLASS = SBElement; 
+        }
+    ); 
+    IBVersion = 1; 
+}
