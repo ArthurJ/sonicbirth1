@@ -607,10 +607,12 @@ ComponentResult CLASS_NAME::GetProperty(AudioUnitPropertyID inID,
                 
 				CFURLRef bundleURL = CFBundleCopyBundleURL( bundle );
                 if (bundleURL == NULL) return fnfErr;
-                
+				
 				CFStringRef className = CFStringCreateCopy(NULL, CFSTR("SBRuntimeViewFactory"));
 				AudioUnitCocoaViewInfo cocoaInfo = { bundleURL, { className } };
 				*((AudioUnitCocoaViewInfo *)outData) = cocoaInfo;
+				
+				NSLog(@"sonicbirth bundleURL: %@ class: %@", bundleURL, className);
 				
 				LOG("\treturns noErr\n")
 				return noErr;

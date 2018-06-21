@@ -24,6 +24,7 @@
 
 #include <pthread.h>
 #include <vector>
+#include <sys/time.h>
 
 //#define DO_LOG_STUFF 
 #ifndef DO_LOG_STUFF

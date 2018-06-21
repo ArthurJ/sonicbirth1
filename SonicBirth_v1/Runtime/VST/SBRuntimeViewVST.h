@@ -9,7 +9,7 @@
 
 //#include "vstplugsmacho.h"
 
-#include "aeffeditor.h"
+//#include "aeffeditor.h"
 #include "SonicBirthRuntimeVST.h"
 #include <Cocoa/Cocoa.h>
 #include <AGL/agl.h>
@@ -18,27 +18,28 @@
 
 @class SBRuntimeView;
 
-class SBVSTView : public AEffEditor
+namespace Steinberg {
+namespace Vst {
+
+class SBVSTView : public EditController
 {
 public:
-
 	SBVSTView (SBVST *effect);
 	virtual ~SBVSTView();
 	
-	virtual bool open (void *ptr);
-	virtual void close ();
+	virtual IPlugView* PLUGIN_API createView (FIDString /*name*/);
 	
-	virtual bool getRect (ERect **rect);
-
-public:
-	SBVST				*mEffect;
-	ERect				mRect;
-	ogWrap				*mW;
-	AGLContext			mAgl;
-	ControlRef			mControl;
-	WindowRef			mWindow;
-	SBListenerCarbon	*mListener;
-	int					mX, mY, mWidth, mHeight, mLock;
+private:
+	SBVST *mEffect;
 };
+
+class SBVSTView_l2 : public EditorView
+{
+	virtual tresult PLUGIN_API attached (void* parent, FIDString type);
+	virtual tresult PLUGIN_API removed ();
+};
+
+} // namespace Vst
+} // namespace Steinberg
 
 #endif /* SONICBIRTHRUNTIMEVIEWVST_H */

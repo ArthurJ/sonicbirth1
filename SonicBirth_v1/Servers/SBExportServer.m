@@ -718,7 +718,7 @@ static int patchMemory(unsigned char *buf, int size, SBPassedData *passedData)
 	[res appendString:@"#include \"ExportResources.r\"\n"];
 	
 	// ressource for the plugin view
-	if ([circuit hasCustomGui])
+	if (0 && [circuit hasCustomGui])
 	{
 		[res appendString:@"#define RES_ID			12000\n"];
 		

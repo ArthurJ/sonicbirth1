@@ -19,7 +19,13 @@ class SBVST;
 #include <vector>
 #include <pthread.h>
 
-#include "audioeffectx.h"
+//#include "audioeffectx.h"
+#include "public.sdk/source/vst/vstaudioeffect.h"
+#include "public.sdk/source/vst/vsteditcontroller.h"
+#include "public.sdk/source/main/pluginfactoryvst3.h"
+#include "pluginterfaces/vst/ivstparameterchanges.h"
+#include "public.sdk/source/vst/vst2wrapper/vst2wrapper.h"
+#include "pluginterfaces/base/futils.h"
 
 class SBRuntimeViewVST;
 @class SBRootCircuit;

@@ -194,9 +194,9 @@ SBVST::SBVST (audioMasterCallback audioMaster, SBPassedData* passedData)
 	
 	if (mHasGui)
 	{
-		AEffEditor *ed = new SBVSTView(this);
-		if (ed) setEditor(ed);
-		LOG("alloc editor: %p\n", ed);
+		//AEffEditor *ed = new SBVSTView(this);
+		//if (ed) setEditor(ed);
+		//LOG("alloc editor: %p\n", ed);
 	}
 	LOG("editor: %p\n", editor);
 	

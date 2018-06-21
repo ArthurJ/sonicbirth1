@@ -18,6 +18,33 @@
 	#warning "vst logging enabled."
 #endif
 
+namespace Steinberg {
+namespace Vst {
+
+SBVSTView::SBVSTView (SBVST *effect)
+:
+	mEffect(effect)
+{
+
+
+}
+
+SBVSTView::~SBVSTView()
+{
+
+
+}
+
+IPlugView* SBVSTView::createView (FIDString /*name*/)
+{
+	return 0;
+}
+	
+} // namespace Vst
+} // namespace Steinberg
+
+#if 0
+
 //-----------------------------------------------------------------------------
 /*
 void SBVSTView::draw(ERect* rect)
@@ -536,3 +563,5 @@ bool SBVSTView::getRect (ERect **rect)
 	}
 	return false;
 }
+
+#endif
